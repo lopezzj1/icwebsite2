@@ -1,0 +1,73 @@
+
+#sort {
+    padding-bottom: 1em;
+}
+.sort-ui, .filter-ui {
+    margin-bottom: 1em;
+}
+
+.cards {
+    margin: 0;
+    padding: 0;
+}
+
+
+.card {
+    list-style: none;
+    padding: 10px;
+    margin-bottom: 0.5em;
+    clear: both;
+    height: 170px;
+    position: relative;
+    padding: 10px;
+}
+
+.card:hover {
+    border-right-style: solid;
+    border-right-color: #b7a57a;
+    border-right-width: 3px;
+    background-color: #E6E6E6;
+}
+
+.card img {
+    float: left;
+    padding: 2px;
+    max-width: 150px;
+    max-height: 150px;
+    margin-right: 10px;
+}
+
+.card .details {
+    padding-left: 170px;
+}
+
+.card .name,
+.card .title,
+.card p {
+    margin-top: 0;
+    margin-bottom: 0.25em;
+}
+
+.card .title {
+    font-size: 150%;
+}
+
+.card .department {
+    font-size: 125%;
+}
+
+.card .department {
+    font-size: 16px;
+}
+
+.btn-1 {
+    border: 3px solid #fff;
+    color: #fff;
+}
+
+/* Button 1a */
+.btn-1a:hover,
+.btn-1a:active {
+    color: #0e83cd;
+    background: #fff;
+}
