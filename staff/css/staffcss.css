@@ -1,6 +1,6 @@
 
 .quickLinks {
-        
+          
 }
 
 #sort {
@@ -23,6 +23,11 @@
     border-bottom-width: 2px;
     border-bottom-color: #4B2E83;
 }
+
+.searchFilter {
+    padding-top: 1em;
+}
+
 
 .card {
     list-style: none;
