@@ -1,6 +1,13 @@
 
-.quickLinks {
-          
+
+.quickLinks a {
+    padding: 2px;
+    border-right: solid;
+    border-width: 1px;
+    border-color: lightgrey;
+    color: black;
+        
+
 }
 
 #sort {
