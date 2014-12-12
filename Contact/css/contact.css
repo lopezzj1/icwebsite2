@@ -45,5 +45,29 @@ li {
 
 
 @media (max-width: 760px) {
-    background-image: none;
+    header {    
+        position: relative;
+    }
+
+    body {
+        background-image: none;
+    }
+
+    nav {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    
+    .purplestrip {
+        display: inline;
+    }
+
+    .purplestrip h1 {
+        display: inline;
+    }
+    .purplestrip h2 {
+        display: inline;
+    }
+
 }
