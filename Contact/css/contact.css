@@ -4,17 +4,19 @@ li {
     list-style: none;
 }
 .Contact-Information {
-
+    font-size: 20px;
+    text-align: center;
  }   
 
 #mapContainer {
     padding-left: 20%;
     padding-right: 20%;
 
+
 }
 
 #map {
-    height: 1000px;
+    width: 100%;
 }
 
 .purplestrip {
