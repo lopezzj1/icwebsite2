@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Graduate);
 
 .welcome {
     padding-top: 20px;
@@ -7,6 +8,9 @@
     height: 125px;
 }
 
+.welcome {
+    font-family: 'Graduate', 'Open Sans', 'Helvetica Neue', 'Helvetica', sans-serif;
+}
 
 #slideshow DIV IMG {
     display: inline-block;
@@ -16,16 +20,17 @@
     height: 100%;
     background-position: center center;
     background-size: cover;
+    padding: 1em;
 
 }
 
 #slideshow h2 {
     padding: 1em;
     position: absolute;
-    font-size: 4em;
+    font-size: 40px;
     color: white;
     text-shadow: 2px 2px black;
-    font-family: 'Graduate', cursive;
+    font-family: 'Graduate', 'Open Sans', 'Helvetica Neue', 'Helvetica', sans-serif;
 }
 .topleft{
     top: 0;
@@ -53,10 +58,10 @@
     z-index:8;
     opacity:0.0;
     height: 400px;
-    background-color: #FFF;
+
 }
 
-#slideshow DIV.active {
+#ƒlideshow DIV.active {
     z-index:10;
     opacity:1.0;
 }
@@ -65,47 +70,6 @@
     z-index:9;
 }
 
-/*
-
-#slide img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto; 
-    object-fit: none;
-    object-position: center; 
-    height: 300px;
-    width: 100%
-}
-
-#slideshow {
-    position:relative;
-    height:350px;
-}
-
-#slideshow DIV {
-    position:absolute;
-    top:0;
-    left:0;
-    z-index:8;
-    opacity:0.0;
-}
-
-#slideshow DIV.active {
-    z-index:10;
-    opacity:1.0;
-}
-
-#slideshow DIV.last-active {
-    z-index:9;
-}
-
-/*old slideshow
-#slide{
-    display: block;
-    margin-left: auto;
-    margin-right: auto; 
-    object-fit: none;
-    object-position: center; 
-    height: 300px;
-    width: 100%
+#icInfo li {
+    list-style-type: none;
 }

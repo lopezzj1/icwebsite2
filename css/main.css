@@ -68,27 +68,24 @@ footer {
     background-image: url('http://www.washington.edu/wp-content/themes/uw-2014/assets/headers/fall-leaves.jpg');
 }
 .subheading {
-    padding: 0;
-    text-align: center;
+    padding-left: 10px;
+    text-align: left;
     font-size: 40px;
 }
+
 
 
 /*Navigation Bar*/
 
 
 #nav {
+    background-color: rgba(75, 191, 191, 0.95);
     background-color: #BFBFBF;
-    opacity: .90;
-
-
 }
 
 #nav a{
     font-weight: bold;
-    border-right: solid;
-    border-width: 1px;
-    border-color: rgba(255, 255, 255, 0.90);
+
 }
 #nav ul {
     list-style-type: none;

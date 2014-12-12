@@ -6,13 +6,17 @@
 		<link rel="page icon" href="img/wlogo.png">
 		<link rel="stylesheet" type="text/css" href="./css/main.css">
 		<link rel="stylesheet" type="text/css" href="./css/home.css">
+
 		<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 		<script type="text/javascript" src="js/jquery-1.2.6.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.1/angular.min.js"></script>
 		<script type="text/javascript" src="js/slideshow.js"></script>
-		<link href='http://fonts.googleapis.com/css?family=Graduate' rel='stylesheet' type='text/css'>
+		
+		
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
 	</head>
+
 	<body>
 		<article>
 			<header id="purplestrip">
@@ -52,54 +56,76 @@
 					</ul>
 				</div>
 			</nav>
+			<main class="container-fluid">
+				<div class="welcome">Welcome to the Instructional Center</div>
 
-			<div class="welcome">Welcome to the <br>Instructional Center</div>
 
+				<div id="slideshowContainer">
+					<div id="slideshow">
+						<div class="active">
+					    	<img src="http://depts.washington.edu/omad/images/enews/spring11/UW-18.jpg" alt="squirrel attack" />
+					    	<h2 class='topleft'>This is a caption</h2>
+					    </div>
+					    <div>
+					    	<img src="http://students.washington.edu/katlyn/fit100/project1b/squirrelandsuzzallo2.jpg"/>
+					    	<h2 class='bottomright'>Beware of giant squirrels</h2>
+					    </div>
+					    <div>
+					    	<img src="img/image2.jpg" alt="" />
+					    	<h2 class='topleft'>Wow, so cool</h2>
+					    </div>
+					    <div>
+					    	<img src="img/image3.gif" alt="" />
+					    	<h2 class='bottomright'>UW is the best!</h2>
+					    </div>
+					</div>
 
-			<div id="slideshowContainer">
-				<div id="slideshow">
-					<div class="active">
-				    	<img src="http://depts.washington.edu/omad/images/enews/spring11/UW-18.jpg" alt="squirrel attack" />
-				    	<h2 class='topleft'>This is a caption</h2>
-				    </div>
-				    <div>
-				    	<img src="http://students.washington.edu/katlyn/fit100/project1b/squirrelandsuzzallo2.jpg"/>
-				    	<h2 class='bottomright'>Beware of giant squirrels</h2>
-				    </div>
-				    <div>
-				    	<img src="img/image2.jpg" alt="" />
-				    	<h2 class='topleft'>Wow, so cool</h2>
-				    </div>
-				    <div>
-				    	<img src="img/image3.gif" alt="" />
-				    	<h2 class='bottomright'>UW is the best!</h2>
-				    </div>
+					<script type="text/javascript">
+						$(function() {
+	    					setInterval( "slideSwitch()", 5000 );
+						});
+					</script>
 				</div>
-				<script type="text/javascript">
-				$(function() {
-    				setInterval( "slideSwitch()", 5000 );
-				});</script>
 
-				<!--Old Slide Show
-				<a href="javascript:slidelink()"><img src="img/image1.jpg" id="slide" /></a>
-				<script type="text/javascript">slideit();</script>-->
-
-			</div>
-			<div class='subheading'>Announcements</div>
-			<ul>
-				<li>This is where announcements would go if they we actually had anything to announce...</li>
-				<li>Important announcement number 1!</li>
-				<li>Wow! Another announcement!</li>
-				<li>You should definitely read this next one!</li>
-				<li>Last one, I swear!</li>
-				<li>Okay I lied, this is the last one.</li>
-				<li>Sike.</li>
-			</ul>
+				<div class="row">
+					<div class="col-md-6">
+						<h3 class='subheading'>Announcements</h3>
+							<ul>
+								<li>This is where announcements would go if they we actually had anything to announce...</li>
+								<li>Important announcement number 1!</li>
+								<li>Wow! Another announcement!</li>
+								<li>You should definitely read this next one!</li>
+								<li>Last one, I swear!</li>
+								<li>Okay I lied, this is the last one.</li>
+								<li>Sike.</li>
+							</ul>
+					</div>
+					<div class="col-md-6">
+						<h3 class="subheading">IC Info</h3>
+							<ul id="icInfo">
+								<li>Location:</li>
+									<ul>
+										<li><a href="https://goo.gl/maps/ZgMu5">1307 NE 40th Street, Seattle, Wa 98105</a></li>
+									</ul>
+								<li>Hours:</li>
+									<ul>
+										<li>Mondays-Thursdays: 8:00am - 8:00pm</li>
+										<li>Friday: 8:00am - 5:00pm</li>
+									</ul>
+								<li>Mail Us!</li>
+									<ul>
+										<li><a href="mailto:ic@uw.edu">ic@uw.edu</a></li>
+									</ul>
+							</ul>
+					</div>
+				</div>
+				
+			</main>
 
 			<footer>
 				<p>&#169; Instructional Center</p>
 			</footer>
-	
+		
 		</article>
 	</body>
 	
