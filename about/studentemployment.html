@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Student Employment</title>
+
+		<link rel="stylesheet" href="css/studentapp.css">
+		<link rel="stylesheet" href="../css/main.css">
+        <!--<link rel="stylesheet" href="css/aboutus.css">-->
+
+	    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.1/angular.min.js"></script>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	</head>
+	<body>
+		<article>
+			<header>
+				<h1>IC Website</h1>
+			</header>
+
+			<nav role="navigation" id="nav">
+				<div id="nav_wrapper">
+					<ul>
+						<li><a href="../home.html">HOME</a>
+						</li>
+
+						<li><a href="aboutus.html">ABOUT</a> 
+							<ul>
+								<li><a href="aboutus.html">What is the IC?</a></li>
+								<li><a href="studentemployment.html">Student Employment</a></li>
+							</ul>
+						</li>
+						<li><a href="../Contact/contact.html">CONTACT / HOURS</a>
+							<ul>
+								<li><a href="../Contact/contact.html">Contact info</a></li>
+								<li><a href="../Contact/building-hours.html">Building Hours</a></li>
+								<li><a href="../Contact/program-hours.html">Program Hours</a></li>
+							</ul>
+						</li>
+						<li><a href="../staff/staff.html">STAFF</a>
+							<ul>
+								<li><a href="../staff/staff.html">Get to know us!</a></li>
+							</ul>
+						</li>
+						<li><a href="../resources/resources.html">RESOURCES</a>
+							<ul>
+								<li><a href="../resources/resources.html">Resources</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</nav>
+
+			<main class="info container-fluid">
+				<div class="intro">
+					<h2>Apply to be a tutor at the IC!</h2>
+					<p>Are you interested in being a tutor? Sign up here!</p>
+				</div>
+
+	            <form name="signup" id="signup" method="post" class="form-horizontal" role="form">
+	            	<p><b>Basic Information:</b></p>
+	                <div class="form-group">
+	                    <label for="firstName" class="col-sm-2 control-label">Name</label>
+	                    <div class="col-sm-5">
+	                        <input type="text" name="firstName" id="firstName" class="form-control" placeholder="your first name (required)" autofocus>
+	                    </div>
+	                    <div class="col-sm-5">
+	                        <input type="text" name="lastName" class="form-control" placeholder="your last name (required)">
+	                    </div>
+	                </div>
+
+	                <div class="form-group">
+	                    <label for="email" class="col-sm-2 control-label">Email</label>
+	                    <div class="col-sm-4">
+	                        <input type="email" name="email" id="email" class="form-control" placeholder="your email address is required">
+	                    </div>
+	                   
+	                   <label for="phone" class="col-sm-1 control-label">Phone#:</label>
+	                    <div class="col-sm-5">
+	                        <input type="text" name="zip" id="zip" class="form-control" placeholder="enter your number">
+	                    </div>
+	                </div>
+
+	                <p><b>Education:</b></p>
+	                <div class="form-group">
+	                    <label for="schoolYear" class="col-sm-2 control-label">Year / Major:</label>
+	                    <div class="col-sm-5">
+	                        <select name="schoolYear" id="schoolYear" class="form-control">
+	                            <option value="" selected disabled>select...</option>
+	                            <option value="freshman">Freshman</option>
+	                            <option value="sophomore">Sophomore</option>
+	                            <option value="junior">Junior</option>
+	                            <option value="senior">Senior</option>
+	                            <option value="super">Super Senior</option>
+	                        </select>
+	                    </div>
+	                    <div class="col-sm-5">
+	                    	<input type="text" name="major" id="major" class="form-control" placeholder="Major?">
+	                    </div>
+	                </div>
+
+
+	            <p><b>Skills:</b></p> 
+					<div class="form-group">
+					    <label for="InputFile" class="col-sm-3 control-label">Attach Resume:</label>
+					    <input class="col-sm-9" type="file" id="InputFile">
+				 	 </div>
+					<div class="form-group">
+	                    <label for="skills" class="col-md-3 control-label">What skills do you bring to the IC?</label>
+	                    <div class="col-md-9">
+	                    	<textarea  name="skillsAns" type="text" name="major" id="major" class="form-control" rows="6"></textarea>
+	                    </div>
+	          	  	</div>
+
+	                <div class="form-group">
+	                    <div class="col-sm-12 text-right">
+	                        <button id="submit" type="submit" class="btn btn-primary">Submit Application</button>
+	                    </div>
+	                </div>
+	            </form>
+
+			</main>
+
+		    <footer>
+		        <p>&#169; Instructional Center</p>
+		        <p><a href = #> Back to Top &uarr;</a></p>
+		    </footer>
+
+		</article>
+	</body>
+
+	<script src="js/application.js"></script>
+</html>

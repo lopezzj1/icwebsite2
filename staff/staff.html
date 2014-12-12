@@ -15,7 +15,7 @@
 	<body ng-app="StaffApp" ng-controller="StaffController">
 		<article>
 			<header class="page-title">
-				<h1>Test Test test</h1>
+				<h1>Instructional Center</h1>
 			</header>
 
 			<nav role="navigation" id="nav">
@@ -32,7 +32,7 @@
 								<li><a href="../about/aboutus.html">What is the IC?</a></li>
 							</ul>
 						</li>
-						<li><a href="../Contact/contactus.html">CONTACT</a>
+						<li><a href="../Contact/contact.html">CONTACT / HOURS</a>
 							<ul>
 								<li><a href="../Contact/contact.html">Contact Info</a></li>
 								<li><a href="../Contact/building-hours.html">Building Hours</a></li>
@@ -41,20 +41,31 @@
 						</li>
 						<li><a href="staff.html">STAFF</a>
 							<ul>
-								<li><a href="staff.html">Get to know our staff</a></li>
+								<li><a href="staff.html">Get to know us!</a></li>
 							</ul>
 						</li>
 						<li><a href="../resources/resources.html">RESOURCES</a>
 							<ul>
-								<li><a href="../resources/resources.html">IC Pictures</a></li>
+								<li><a href="../resources/resources.html">Resources</a></li>
 							</ul>
 						</li>
 					</ul>
 				</div>
 			</nav>
-			
+
+			<div class="quickLinks">
+				<a href="#admin">Admin Staff</a>
+				<a href="#bio">Biology Staff</a>
+				<a href="#chem">Chemistry Staff</a>
+				<a href="#math">Math Staff</a>
+				<a href="#physEng">Physics/Engineering</a>
+				<a href="#psy">Psychology Staff</a>
+				<a href="#soc">Sociology Staff</a>
+				<a href="#writingStaff">Writing Staff</a>	
+			</div>
+
 			<main class="container-fluid">
-				<h2>Get to know our staff!</h2>
+				<h2 id="top">Get to know our staff!</h2>
 					<div class="searchFilter">
 						<div class ="sort-ui">
 							<span>Sort By:</span>
@@ -66,27 +77,118 @@
 						</div>
 					</div>
 
+
 					<div class="filter-ui">
 						<input type="search" class="form-control" placeholder="Search..." ng-model="search">
 					</div>
 
 					<div class="staffInfo">
 						<ul class="cards">
-							<li class="card" ng-repeat="current in staff | filter:search | orderBy:order">
-								<img ng-src="{{current.picUrl}}" alt="picture of {{current.firstName}} {{current.lastName}}" />
-								<div class="information">
-									<h2 class="name">{{current.firstName}} {{current.lastName}}</h2>
-									<p class="title">{{current.title}}</p>
-									<p class="department">{{current.department}}</p>
-								</div>
-							</li>
+							<div id="admin">
+								<h2>Administration</h2>
+								<li class="card" ng-repeat="current in admin | filter:search | orderBy:order">
+									<img ng-src="{{current.picUrl}}" alt="picture of {{current.firstName}} {{current.lastName}}" />
+									<div class="information">
+										<h3 class="name">{{current.firstName}} {{current.lastName}}</h3>
+										<p class="title">{{current.title}}</p>
+										<p class="office" ngIf="{{current.office}}">{{current.office}}</p>
+										<p class="email" ngIf="{{current.email}}"> <a href='mailto:{{current.email}}'>{{current.email}}</a></p>
+									</div>
+								</li>
+							</div>
+
+							<div id="bio">
+								<h2>Biology Staff</h2>
+								<li class="card" ng-repeat="current in biology | filter:search | orderBy:order">
+									<img ng-src="{{current.picUrl}}" alt="picture of {{current.firstName}} {{current.lastName}}" />
+									<div class="information">
+										<h3 class="name">{{current.firstName}} {{current.lastName}}</h3>
+										<p class="title">{{current.title}}</p>
+										<p class="email" ngIf="{{current.email}}"><a href='mailto:{{current.email}}'>{{current.email}}</a></p>
+									</div>
+								</li>
+							</div>
+
+							<div id="chem">
+								<h2>Chemistry Staff</h2>
+								<li class="card" ng-repeat="current in chemistry | filter:search | orderBy:order">
+									<img ng-src="{{current.picUrl}}" alt="picture of {{current.firstName}} {{current.lastName}}" />
+									<div class="information">
+										<h3 class="name">{{current.firstName}} {{current.lastName}}</h3>
+										<p class="title">{{current.title}}</p>
+										<p class="email" ngIf="{{current.email}}"><a href='mailto:{{current.email}}'>{{current.email}}</a></p>
+									</div>
+								</li>
+							</div>
+
+							<div id="math">
+								<h2>Math Staff</h2>
+								<li class="card" ng-repeat="current in math | filter:search | orderBy:order">
+									<img ng-src="{{current.picUrl}}" alt="picture of {{current.firstName}} {{current.lastName}}" />
+									<div class="information">
+										<h3 class="name">{{current.firstName}} {{current.lastName}}</h3>
+										<p class="title">{{current.title}}</p>
+										<p class="email" ngIf="{{current.email}}"><a href='mailto:{{current.email}}'>{{current.email}}</a></p>
+									</div>
+								</li>
+							</div>
+
+							<div id="physEng">
+								<h2>Physics and Engineering Staff</h2>
+								<li class="card" ng-repeat="current in physEngin | filter:search | orderBy:order">
+									<img ng-src="{{current.picUrl}}" alt="picture of {{current.firstName}} {{current.lastName}}" />
+									<div class="information">
+										<h3 class="name">{{current.firstName}} {{current.lastName}}</h3>
+										<p class="title">{{current.title}}</p>
+										<p class="email" ngIf="{{current.email}}"><a href='mailto:{{current.email}}'>{{current.email}}</a></p>
+									</div>
+								</li>
+							</div>
+
+							<div id="psy">
+								<h2>Psychology Staff</h2>
+								<li class="card" ng-repeat="current in psychology | filter:search | orderBy:order">
+									<img ng-src="{{current.picUrl}}" alt="picture of {{current.firstName}} {{current.lastName}}" />
+									<div class="information">
+										<h3 class="name">{{current.firstName}} {{current.lastName}}</h3>
+										<p class="title">{{current.title}}</p>
+										<p class="email" ngIf="{{current.email}}"><a href='mailto:{{current.email}}'>{{current.email}}</a></p>
+									</div>
+								</li>
+							</div>
+
+							<div id="soc">
+								<h2>Sociology Staff</h2>
+								<li class="card" ng-repeat="current in sociology | filter:search | orderBy:order">
+									<img ng-src="{{current.picUrl}}" alt="picture of {{current.firstName}} {{current.lastName}}" />
+									<div class="information">
+										<h3 class="name">{{current.firstName}} {{current.lastName}}</h3>
+										<p class="title">{{current.title}}</p>
+										<p class="email" ngIf="{{current.email}}"><a href='mailto:{{current.email}}'>{{current.email}}</a></p>
+									</div>
+								</li>
+							</div>
+
+							<div id="writingStaff">
+								<h2>Writing Staff</h2>
+								<li class="card" ng-repeat="current in writing | filter:search | orderBy:order">
+									<img ng-src="{{current.picUrl}}" alt="picture of {{current.firstName}} {{current.lastName}}" />
+									<div class="information">
+										<h3 class="name">{{current.firstName}} {{current.lastName}}</h3>
+										<p class="title">{{current.title}}</p>
+										<p class="email" ngIf="{{current.email}}"><a href='mailto:{{current.email}}'>{{current.email}}</a></p>
+									</div>
+								</li>
+							</div>
+
 						</ul>
 					</div>
 			</main>
 
-			<footer>
-				<p>&#169; Instructional Center</p>
-			</footer>
+		    <footer>
+		        <p>&#169; Instructional Center</p>
+		        <p><a href="#top"> Back to Top &uarr;</a></p>
+		    </footer>
 
 		</article>
 		<script src="js/staff.js"></script>

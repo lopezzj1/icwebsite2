@@ -1,4 +1,8 @@
 
+.quickLinks {
+        
+}
+
 #sort {
     padding-bottom: 1em;
 }
@@ -11,6 +15,14 @@
     padding: 0;
 }
 
+.cards h2 {
+    font-size: 30px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: #4B2E83;
+}
 
 .card {
     list-style: none;
@@ -23,11 +35,14 @@
 }
 
 .card:hover {
-    border-right-style: solid;
-    border-right-color: #b7a57a;
-    border-right-width: 3px;
-    background-color: #E6E6E6;
+
+    border-left-style: solid;
+    border-left-color: #b7a57a;
+    border-left-width: 3px;
+    background-color: white;
+    color: purple;
 }
+
 
 .card img {
     float: left;
@@ -35,6 +50,18 @@
     max-width: 150px;
     max-height: 150px;
     margin-right: 10px;
+}
+
+.card h3 {
+    font-size: 24px;
+}
+
+.card .title{
+    font-size: 19px;
+}
+
+.card .office {
+    font-size: 16px;
 }
 
 .card .details {
@@ -46,18 +73,6 @@
 .card p {
     margin-top: 0;
     margin-bottom: 0.25em;
-}
-
-.card .title {
-    font-size: 150%;
-}
-
-.card .department {
-    font-size: 125%;
-}
-
-.card .department {
-    font-size: 16px;
 }
 
 .btn-1 {

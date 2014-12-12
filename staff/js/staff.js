@@ -1,4 +1,4 @@
-var icStaff = [
+var adminStaff = [
 	{
 		firstName: 'Therese',
 		lastName: 'Mar',
@@ -17,13 +17,51 @@ var icStaff = [
 		email: 'reginah@u.washington.edu'
 	},
 	{
+		firstName: 'Byron',
+		lastName: 'MacKenzie',
+		title: 'IC Webmaster',
+		office: 'IT',
+		department: 'Administration',
+		picUrl: 'img/byron2.jpg',
+		email: 'physiker@u.washington.edu'
+	},
+	{
+		firstName: 'Leah',
+		lastName: 'Spencer',
+		office: 'Student Support Services',
+		department: 'Administration',
+		picUrl: 'img/leah2.jpg'
+	},
+	{
+		firstName: 'Hannah',
+		lastName: 'Chi',
+		office: 'Successful Transition Program',
+		department: 'Administration',
+		picUrl: 'img/hannah2.jpg',
+		email: 'chih2@u.washington.edu'
+	},
+	{
+		firstName: 'Getachew',
+		lastName: 'Zeleke',
+		office: 'Student Support Services',
+		department: 'Administration',
+		picUrl: 'img/getachew2.jpg',
+		email: 'zelekg@u.washington.edu'
+	}
+];
+
+var bioStaff = [
+	{
 		firstName: 'Elijah',
 		lastName: 'Wallace',
 		title: 'Instructor',
 		department: 'Biology',
 		picUrl: 'img/elijah2.jpg',
 		email: 'jawhar1@u.washington.edu'
-	},
+	}
+];
+
+var chemStaff = [
 	{
 		firstName: 'EJ',
 		lastName: 'Burks',
@@ -38,7 +76,10 @@ var icStaff = [
 		department: 'Chemistry',
 		picUrl: 'img/scott2.jpg',
 		email: 'sfung@u.washington.edu'
-	},
+	}
+];
+
+var mathStaff = [
 	{
 		firstName: 'Bahn',
 		lastName: 'Ly',
@@ -66,8 +107,7 @@ var icStaff = [
 		firstName: 'Getachew',
 		lastName: 'Zeleke',
 		title: 'Instructor',
-		office: 'Student Support Services',
-		department: 'Administration',
+		department: 'Math',
 		picUrl: 'img/getachew2.jpg',
 		email: 'zelekg@u.washington.edu'
 	},
@@ -75,8 +115,7 @@ var icStaff = [
 		firstName: 'HG',
 		lastName: 'Pitre',
 		title: 'Instructor',
-		office: 'Director of the Instructional Center',
-		department: 'Administration',
+		department: 'Math',
 		picUrl: 'img/hg2.jpg',
 		email: 'hgpitre@u.washington.edu'
 	},
@@ -92,7 +131,6 @@ var icStaff = [
 		firstName: 'Therese',
 		lastName: 'Mar',
 		title: 'Math & Statistics Instructor',
-		office: 'Director of the Instructional Center',
 		department: 'Math',
 		picUrl: 'img/therese2.jpg',
 		email: 'therese@u.washington.edu'
@@ -106,34 +144,15 @@ var icStaff = [
 		email: 'morenorm@u.washington.edu'
 	},
 	{
-		firstName: 'Byron',
-		lastName: 'MacKenzie',
-		title: 'Instructor',
-		department: 'Physics & Engineering',
-		picUrl: 'img/byron2.jpg'
-	},
-	{
-		firstName: 'Byron',
-		lastName: 'MacKenzie',
-		office: 'IC Webmaster',
-		department: 'IT',
-		picUrl: 'img/byron2.jpg',
-		email: 'physiker@u.washington.edu'
-	},
-	{
 		firstName: 'Steve',
 		lastName: 'Anderson',
 		title: 'Instructor',
 		department: 'Math',
 		picUrl: 'img/steve2.jpg'
-	},
-	{
-		firstName: 'Steve',
-		lastName: 'Anderson',
-		title: 'Instructor',
-		department: 'Math',
-		picUrl: 'img/steve2.jpg'
-	},
+	}
+];
+
+var physEngineStaff = [
 	{
 		firstName: 'Stuart',
 		lastName: 'Anderson',
@@ -143,31 +162,44 @@ var icStaff = [
 		email: 'strt@u.washington.edu'
 	},
 	{
+		firstName: 'Byron',
+		lastName: 'MacKenzie',
+		title: 'Instructor',
+		department: 'Physics & Engineering',
+		picUrl: 'img/byron2.jpg'
+	},
+	{
+		firstName: 'Steve',
+		lastName: 'Anderson',
+		title: 'Instructor',
+		department: 'Physics & Engineering',
+		picUrl: 'img/steve2.jpg'
+	}
+];
+
+var psychStaff = [
+	{
 		firstName: 'Ian',
 		lastName: 'Young',
 		title: 'Instructor',
 		department: 'Psychology',
 		picUrl: 'img/ian2.jpg',
 		email: 'ianyoung@u.washington.edu'
-	},
+	}
+];
+
+var socStaff = [
 	{
 		firstName: 'Hannah',
 		lastName: 'Chi',
 		title: 'Instructor',
-		office: 'Successful Transition Program',
 		department: 'Sociology',
 		picUrl: 'img/hannah2.jpg',
 		email: 'chih2@u.washington.edu'
-	},
-	{
-		firstName: 'Hannah',
-		lastName: 'Chi',
-		title: 'Instructor',
-		office: 'Successful Transition Program',
-		department: 'Writing',
-		picUrl: 'img/hannah2.jpg',
-		email: 'chih2@u.washington.edu'
-	},
+	}
+];
+
+var writeStaff = [
 	{
 		firstName: 'George',
 		lastName: 'Bauer',
@@ -176,14 +208,7 @@ var icStaff = [
 		picUrl: 'img/george2.jpg',
 		email: 'gbauer@u.washington.edu'
 	},
-	{
-		firstName: 'Leah',
-		lastName: 'Spencer',
-		title: 'Instructor',
-		office: 'Student Support Services',
-		department: 'Writing',
-		picUrl: 'img/leah2.jpg'
-	},
+
 	{
 		firstName: 'Nicky',
 		lastName: 'Stein',
@@ -192,4 +217,19 @@ var icStaff = [
 		picUrl: 'img/nicky2.jpg',
 		email: 'nstein@u.washington.edu'
 	},
+	{
+		firstName: 'Hannah',
+		lastName: 'Chi',
+		title: 'Instructor',
+		department: 'Writing',
+		picUrl: 'img/hannah2.jpg',
+		email: 'chih2@u.washington.edu'
+	},
+	{
+		firstName: 'Leah',
+		lastName: 'Spencer',
+		title: 'Instructor',
+		department: 'Writing',
+		picUrl: 'img/leah2.jpg'
+	}
 ]

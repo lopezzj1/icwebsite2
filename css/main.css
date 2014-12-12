@@ -7,21 +7,46 @@ body {
     background-attachment: fixed;
 }
 
+
 header {
     background-color: #4B2E83;
     color: white;
-    height: 90px;
+    height: 150px;
     padding-top: 22px;
-    padding-bottom: 5em;
+    padding-bottom: 10px;
     padding-left: 1em;
     border-bottom: 5px;
     border-bottom-color: #391C73;
     border-bottom-style: solid;
-
 }
 
+/*.purplestrip h1{
+    position: relative;
+    font-size: 30px;
+    top: -130px;
+    left: 175px;
+
+}*/
+
+/*.purplestrip h2 {
+    margin: 0px;
+    position: relative;
+    top: -130px;
+    left: 175px;
+    font-size: 20px;
+}*/
+
+/*.purplestrip h3 {
+    position: relative;
+    font-size: 18px;
+    top: -150px;
+    left: 200px;
+}*/
+
+
+
 article {
-    background-color: rgba(255, 255, 255, 0.90);
+    background-color: rgba(255, 255, 255, 0.95);
     margin-left: auto;
     margin-right: auto;
     width: 800px;
@@ -115,7 +140,7 @@ footer {
     background-color: white; 
     font-style: bold; 
     text-align: center;
-    width: 150px;
+    width: 160px;
     font-size: 14px;
     padding-bottom: 5px;
     padding-top: 5px;

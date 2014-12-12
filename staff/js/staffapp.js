@@ -11,12 +11,26 @@
 angular.module('StaffApp', [])
 	.controller('StaffController', function($scope){
 		//initialize employees and order
-		$scope.staff = icStaff;
+		//$scope.staff = icStaff;
+		$scope.admin = adminStaff;
+		$scope.biology = bioStaff;
+		$scope.chemistry = chemStaff;
+		$scope.math = mathStaff;
+		$scope.physEngin = physEngineStaff;
+		$scope.psychology = psychStaff;
+		$scope.sociology = socStaff;
+		$scope.writing = writeStaff;
+
+
 		$scope.order = 'department';
 
 		$scope.sortBy = function(sort) {
 			return $scope.order == sort;
 		};
+
+		if ($scope.order == 'department'){
+
+		}
 
 		$scope.isSortedBy = function (sorted){
 			if (sorted == 'lastName') {
