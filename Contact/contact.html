@@ -53,14 +53,12 @@ google.maps.event.addDomListener(window, 'load', initialize);
 <body>
     <article>
         <header id="purplestrip">
-            <div>
-                <div>
-                    <a id="w-Logo" href="http://uw.edu" title="University of Washington Home"><img src="img/logo.png"></a>
-                    <h1>Office of Minority Affairs & Diversity </h1>
-                    <h2>Instructional Center</h2>
-                </div>
-            </div>
-         </header>
+            <a id="w-Logo" href="http://uw.edu" title="University of Washington Home">
+                <img src="../img/logo.png"></a>
+            <h1>Instructional Center</h1>
+            <h2>Office of Minority Affairs &amp; Diversity</h2>
+            <h3>University of Washington</h3>
+        </header>
 
     <nav role="navigation" id="nav">
         <div id="nav_wrapper">
@@ -98,14 +96,21 @@ google.maps.event.addDomListener(window, 'load', initialize);
         <div class='headingContainer'><div class="heading">Contact Information</div></div>
         <main class="contact">
             <section class="Contact-Information">
+                <h2>Instructional Center</h2>
                 <ul>
-                    <li>Instructional Center<br>
-                        1307 NE 40th St<br>
-                        Seattle, WA 98105<br>
-                    </li>
-                    <br>
-                    <li><a href="tel:1-206-543-4320">Phone: (206)543-4320</a></li>
-                    <li><a href="mailto:ic@uw.edu">Email: ic@uw.edu</a></li>
+                    <li>Location:</li>
+                        <ul>
+                            <li><a href="https://goo.gl/maps/ZgMu5">1307 NE 40th Street, Seattle, Wa 98105</a></li>
+                        </ul>
+                    <li>Hours:</li>
+                        <ul>
+                            <li>Mondays-Thursdays: 8:00am - 8:00pm</li>
+                            <li>Friday: 8:00am - 5:00pm</li>
+                        </ul>
+                    <li>Mail Us!</li>
+                        <ul>
+                            <li><a href="mailto:ic@uw.edu">ic@uw.edu</a></li>
+                        </ul>
                 </ul>
             </section>
             <div id='mapContainer'>
@@ -115,6 +120,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
                 <div id="googleMap" style="width:500px;height:380px;"></div>
             </div>
         </main>
+
         <footer>
             <p>&#169; Instructional Center</p>
             <p><a href="#top"> Back to Top &uarr;</a></p>

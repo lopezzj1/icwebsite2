@@ -12,7 +12,7 @@ body {
 header {
     background-color: #4B2E83;
     color: white;
-    height: 90px;
+    height: 170px;
     padding-top: 22px;
     padding-bottom: 5em;
     padding-left: 1em;
@@ -32,10 +32,10 @@ article {
     font-weight: 300;
 }
 
-main {
-    padding: 1em;
+.info {
+    padding: 2em;
+    padding-bottom: 5em;
 }
-
 
 header h1 {
     font-size: 45px;
@@ -176,17 +176,26 @@ footer {
 /*formatting for the uw logo*/
 #purplestrip h1 {
     position: relative;
-    top: -130px;
-    left: 150px;
-    font-size: 30px;
+    top: -110px;
+    left: 170px;
+    font-size: 35px;
 }
 #purplestrip h2 {
     position: relative;
     font-size: 20px;
-    top: -150px;
-    left: 150px;
+    top: -120px;
+    left: 200px;
+    line-height: 1px;
 }
+#purplestrip h3 {
+    position: relative;
+    font-size: 16px;
+    top: -120px;
+    left: 225px;
+    line-height: 1px;
+}
+
 #w-Logo img {
     position: relative;
-    top: -20px;
-    width: 150px;
+    top: 20px;
+    width: 200px;

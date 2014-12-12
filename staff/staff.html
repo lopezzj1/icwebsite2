@@ -16,9 +16,11 @@
 	<body ng-app="StaffApp" ng-controller="StaffController">
 		<article>
 			<header id="purplestrip">
-				<a id="w-Logo" href="http://uw.edu" title="University of Washington Home"><img src="../img/logo.png"></a>
-				<h1>Office of Minority Affairs & Diversity </h1>
-				<h2>Instructional Center</h2>
+				<a id="w-Logo" href="http://uw.edu" title="University of Washington Home">
+					<img src="../img/logo.png"></a>
+				<h1>Instructional Center</h1>
+				<h2>Office of Minority Affairs &amp; Diversity</h2>
+				<h3>University of Washington</h3>
 			</header>
 
 
@@ -58,137 +60,139 @@
 				</div>
 			</nav>
 
-			<div class="quickLinks">
-				<a href="#admin">Admin Staff</a>
-				<a href="#bio">Biology Staff</a>
-				<a href="#chem">Chemistry Staff</a>
-				<a href="#math">Math Staff</a>
-				<a href="#physEng">Physics/Engineering</a>
-				<a href="#psy">Psychology Staff</a>
-				<a href="#soc">Sociology Staff</a>
-				<a href="#writingStaff">Writing Staff</a>	
-			</div>
 
 			<div class="headingContainer"><div class="heading">Get to know our staff!</div></div>		
 			<main class="container-fluid">
 
-					<div class="searchFilter">
-						<div class ="sort-ui">
-							<span>Sort By:</span>
-							<div class="btn-group">
-								<button ng-class="{active: sortBy('department')}" ng-click="order='department'" type="button" class="btn btn-default">Department</button>
-								<button ng-class="{active: sortBy('lastName')}" ng-click="order = 'lastName'" type="button" class="btn btn-default">Last Name</button>
-								<button ng-class="{active: sortBy('firstName')}" ng-click="order = 'firstName'" type="button" class="btn btn-default">First Name</button>
-							</div>
+
+				<div class="searchFilter">
+					<div class ="sort-ui">
+						<span>Sort By:</span>
+						<div class="btn-group">
+							<button ng-class="{active: sortBy('department')}" ng-click="order='department'" type="button" class="btn btn-default">Department</button>
+							<button ng-class="{active: sortBy('lastName')}" ng-click="order = 'lastName'" type="button" class="btn btn-default">Last Name</button>
+							<button ng-class="{active: sortBy('firstName')}" ng-click="order = 'firstName'" type="button" class="btn btn-default">First Name</button>
 						</div>
 					</div>
+				</div>
 
 
-					<div class="filter-ui">
-						<input type="search" class="form-control" placeholder="Search..." ng-model="search">
-					</div>
+				<div class="filter-ui">
+					<input type="search" class="form-control" placeholder="Search..." ng-model="search">
+				</div>
 
-					<div class="staffInfo">
-						<ul class="cards">
-							<div id="admin">
-								<h2>Administration</h2>
-								<li class="card" ng-repeat="current in admin | filter:search | orderBy:order">
-									<img ng-src="{{current.picUrl}}" alt="picture of {{current.firstName}} {{current.lastName}}" />
-									<div class="information">
-										<h3 class="name">{{current.firstName}} {{current.lastName}}</h3>
-										<p class="title">{{current.title}}</p>
-										<p class="office" ngIf="{{current.office}}">{{current.office}}</p>
-										<p class="email" ngIf="{{current.email}}"> <a href='mailto:{{current.email}}'>{{current.email}}</a></p>
-									</div>
-								</li>
-							</div>
+				<div class="quickLinks">
+					<a href="#admin">Admin Staff</a>
+					<a href="#bio">Biology Staff</a>
+					<a href="#chem">Chemistry Staff</a>
+					<a href="#math">Math Staff</a>
+					<a href="#physEng">Physics/Engineering</a>
+					<a href="#psy">Psychology Staff</a>
+					<a href="#soc">Sociology Staff</a>
+					<a href="#writingStaff">Writing Staff</a>	
+				</div>
+				
+				<div class="staffInfo">
+					<ul class="cards">
+						<div id="admin">
+							<h2>Administration</h2>
+							<li class="card" ng-repeat="current in admin | filter:search | orderBy:order">
+								<img ng-src="{{current.picUrl}}" alt="picture of {{current.firstName}} {{current.lastName}}" />
+								<div class="information">
+									<h3 class="name">{{current.firstName}} {{current.lastName}}</h3>
+									<p class="title">{{current.title}}</p>
+									<p class="office" ngIf="{{current.office}}">{{current.office}}</p>
+									<p class="email" ngIf="{{current.email}}"> <a href='mailto:{{current.email}}'>{{current.email}}</a></p>
+								</div>
+							</li>
+						</div>
 
-							<div id="bio">
-								<h2>Biology Staff</h2>
-								<li class="card" ng-repeat="current in biology | filter:search | orderBy:order">
-									<img ng-src="{{current.picUrl}}" alt="picture of {{current.firstName}} {{current.lastName}}" />
-									<div class="information">
-										<h3 class="name">{{current.firstName}} {{current.lastName}}</h3>
-										<p class="title">{{current.title}}</p>
-										<p class="email" ngIf="{{current.email}}"><a href='mailto:{{current.email}}'>{{current.email}}</a></p>
-									</div>
-								</li>
-							</div>
+						<div id="bio">
+							<h2>Biology Staff</h2>
+							<li class="card" ng-repeat="current in biology | filter:search | orderBy:order">
+								<img ng-src="{{current.picUrl}}" alt="picture of {{current.firstName}} {{current.lastName}}" />
+								<div class="information">
+									<h3 class="name">{{current.firstName}} {{current.lastName}}</h3>
+									<p class="title">{{current.title}}</p>
+									<p class="email" ngIf="{{current.email}}"><a href='mailto:{{current.email}}'>{{current.email}}</a></p>
+								</div>
+							</li>
+						</div>
 
-							<div id="chem">
-								<h2>Chemistry Staff</h2>
-								<li class="card" ng-repeat="current in chemistry | filter:search | orderBy:order">
-									<img ng-src="{{current.picUrl}}" alt="picture of {{current.firstName}} {{current.lastName}}" />
-									<div class="information">
-										<h3 class="name">{{current.firstName}} {{current.lastName}}</h3>
-										<p class="title">{{current.title}}</p>
-										<p class="email" ngIf="{{current.email}}"><a href='mailto:{{current.email}}'>{{current.email}}</a></p>
-									</div>
-								</li>
-							</div>
+						<div id="chem">
+							<h2>Chemistry Staff</h2>
+							<li class="card" ng-repeat="current in chemistry | filter:search | orderBy:order">
+								<img ng-src="{{current.picUrl}}" alt="picture of {{current.firstName}} {{current.lastName}}" />
+								<div class="information">
+									<h3 class="name">{{current.firstName}} {{current.lastName}}</h3>
+									<p class="title">{{current.title}}</p>
+									<p class="email" ngIf="{{current.email}}"><a href='mailto:{{current.email}}'>{{current.email}}</a></p>
+								</div>
+							</li>
+						</div>
 
-							<div id="math">
-								<h2>Math Staff</h2>
-								<li class="card" ng-repeat="current in math | filter:search | orderBy:order">
-									<img ng-src="{{current.picUrl}}" alt="picture of {{current.firstName}} {{current.lastName}}" />
-									<div class="information">
-										<h3 class="name">{{current.firstName}} {{current.lastName}}</h3>
-										<p class="title">{{current.title}}</p>
-										<p class="email" ngIf="{{current.email}}"><a href='mailto:{{current.email}}'>{{current.email}}</a></p>
-									</div>
-								</li>
-							</div>
+						<div id="math">
+							<h2>Math Staff</h2>
+							<li class="card" ng-repeat="current in math | filter:search | orderBy:order">
+								<img ng-src="{{current.picUrl}}" alt="picture of {{current.firstName}} {{current.lastName}}" />
+								<div class="information">
+									<h3 class="name">{{current.firstName}} {{current.lastName}}</h3>
+									<p class="title">{{current.title}}</p>
+									<p class="email" ngIf="{{current.email}}"><a href='mailto:{{current.email}}'>{{current.email}}</a></p>
+								</div>
+							</li>
+						</div>
 
-							<div id="physEng">
-								<h2>Physics and Engineering Staff</h2>
-								<li class="card" ng-repeat="current in physEngin | filter:search | orderBy:order">
-									<img ng-src="{{current.picUrl}}" alt="picture of {{current.firstName}} {{current.lastName}}" />
-									<div class="information">
-										<h3 class="name">{{current.firstName}} {{current.lastName}}</h3>
-										<p class="title">{{current.title}}</p>
-										<p class="email" ngIf="{{current.email}}"><a href='mailto:{{current.email}}'>{{current.email}}</a></p>
-									</div>
-								</li>
-							</div>
+						<div id="physEng">
+							<h2>Physics and Engineering Staff</h2>
+							<li class="card" ng-repeat="current in physEngin | filter:search | orderBy:order">
+								<img ng-src="{{current.picUrl}}" alt="picture of {{current.firstName}} {{current.lastName}}" />
+								<div class="information">
+									<h3 class="name">{{current.firstName}} {{current.lastName}}</h3>
+									<p class="title">{{current.title}}</p>
+									<p class="email" ngIf="{{current.email}}"><a href='mailto:{{current.email}}'>{{current.email}}</a></p>
+								</div>
+							</li>
+						</div>
 
-							<div id="psy">
-								<h2>Psychology Staff</h2>
-								<li class="card" ng-repeat="current in psychology | filter:search | orderBy:order">
-									<img ng-src="{{current.picUrl}}" alt="picture of {{current.firstName}} {{current.lastName}}" />
-									<div class="information">
-										<h3 class="name">{{current.firstName}} {{current.lastName}}</h3>
-										<p class="title">{{current.title}}</p>
-										<p class="email" ngIf="{{current.email}}"><a href='mailto:{{current.email}}'>{{current.email}}</a></p>
-									</div>
-								</li>
-							</div>
+						<div id="psy">
+							<h2>Psychology Staff</h2>
+							<li class="card" ng-repeat="current in psychology | filter:search | orderBy:order">
+								<img ng-src="{{current.picUrl}}" alt="picture of {{current.firstName}} {{current.lastName}}" />
+								<div class="information">
+									<h3 class="name">{{current.firstName}} {{current.lastName}}</h3>
+									<p class="title">{{current.title}}</p>
+									<p class="email" ngIf="{{current.email}}"><a href='mailto:{{current.email}}'>{{current.email}}</a></p>
+								</div>
+							</li>
+						</div>
 
-							<div id="soc">
-								<h2>Sociology Staff</h2>
-								<li class="card" ng-repeat="current in sociology | filter:search | orderBy:order">
-									<img ng-src="{{current.picUrl}}" alt="picture of {{current.firstName}} {{current.lastName}}" />
-									<div class="information">
-										<h3 class="name">{{current.firstName}} {{current.lastName}}</h3>
-										<p class="title">{{current.title}}</p>
-										<p class="email" ngIf="{{current.email}}"><a href='mailto:{{current.email}}'>{{current.email}}</a></p>
-									</div>
-								</li>
-							</div>
+						<div id="soc">
+							<h2>Sociology Staff</h2>
+							<li class="card" ng-repeat="current in sociology | filter:search | orderBy:order">
+								<img ng-src="{{current.picUrl}}" alt="picture of {{current.firstName}} {{current.lastName}}" />
+								<div class="information">
+									<h3 class="name">{{current.firstName}} {{current.lastName}}</h3>
+									<p class="title">{{current.title}}</p>
+									<p class="email" ngIf="{{current.email}}"><a href='mailto:{{current.email}}'>{{current.email}}</a></p>
+								</div>
+							</li>
+						</div>
 
-							<div id="writingStaff">
-								<h2>Writing Staff</h2>
-								<li class="card" ng-repeat="current in writing | filter:search | orderBy:order">
-									<img ng-src="{{current.picUrl}}" alt="picture of {{current.firstName}} {{current.lastName}}" />
-									<div class="information">
-										<h3 class="name">{{current.firstName}} {{current.lastName}}</h3>
-										<p class="title">{{current.title}}</p>
-										<p class="email" ngIf="{{current.email}}"><a href='mailto:{{current.email}}'>{{current.email}}</a></p>
-									</div>
-								</li>
-							</div>
+						<div id="writingStaff">
+							<h2>Writing Staff</h2>
+							<li class="card" ng-repeat="current in writing | filter:search | orderBy:order">
+								<img ng-src="{{current.picUrl}}" alt="picture of {{current.firstName}} {{current.lastName}}" />
+								<div class="information">
+									<h3 class="name">{{current.firstName}} {{current.lastName}}</h3>
+									<p class="title">{{current.title}}</p>
+									<p class="email" ngIf="{{current.email}}"><a href='mailto:{{current.email}}'>{{current.email}}</a></p>
+								</div>
+							</li>
+						</div>
 
-						</ul>
-					</div>
+					</ul>
+				</div>
 			</main>
 
 		    <footer>
