@@ -1,18 +1,110 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:900);
 
-body {
-    background-image: url('http://i.imgur.com/4mJ1rf2.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+
+
+@media (min-width: 992px){
+    body {
+        background-image: url('http://i.imgur.com/4mJ1rf2.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    /*formatting for the uw logo*/
+    #purplestrip h1 {
+        position: relative;
+        top: -150px;
+        left: 170px;
+        font-size: 35px;
+        text-shadow: 2px 2px #2A115C;
+    }
+    #purplestrip h2 {
+        position: relative;
+        font-size: 20px;
+        top: -160px;
+        left: 200px;
+        line-height: 1px;
+    }
+    #purplestrip h3 {
+        position: relative;
+        font-size: 16px;
+        top: -160px;
+        left: 200px;
+        line-height: 1px;
+    }
+
+    #w-Logo img {
+        position: relative;
+        top: -20px;
+        width: 200px;
+    }
+
+    .heading {
+        color: white;
+        height: 100px;
+        text-shadow: 2px 2px black;
+        padding-top: 20px;
+        padding-left: 10px;
+        font-size: 60px; 
+        font-weight: bold;
+    }
+    .headingContainer {
+        background-size: cover;
+        background-image: url('http://www.washington.edu/wp-content/themes/uw-2014/assets/headers/fall-leaves.jpg');
+    }
+    .subheading {
+        padding-left: 0px;
+        text-align: center;
+        font-size: 40px;
+    }
+
+    header h1 {
+        font-size: 45px;
+    }
+
+}
+
+@media (max-width: 991px) {
+
+    header {
+        height: 50px;
+    }
+
+    .heading {
+        display: none;
+    }
+    /*formatting for the uw logo*/
+    #purplestrip h1 {
+        position: relative;
+        top: -110px;
+        left: 120px;
+        font-size: 20px;
+        text-shadow: 2px 2px #2A115C;
+    }
+    #purplestrip h2 {
+        position: relative;
+        font-size: 15px;
+        top: -123px;
+        left: 140px;
+        line-height: 1px;*/
+    }
+    #purplestrip h3 {
+        display:none;
+    }
+
+    #w-Logo img {
+        position: relative;
+        top: -15px;
+        width: 140px;
+    }
+
 }
 
 
 header {
     background-color: #4B2E83;
     color: white;
-    height: 170px;
+    max-height: 130px;
     padding-top: 22px;
     padding-bottom: 5em;
     padding-left: 1em;
@@ -27,7 +119,7 @@ article {
     background-color: rgba(255, 255, 255, 0.95);
     margin-left: auto;
     margin-right: auto;
-    width: 800px;
+    max-width: 800px;
     font-family:'Open Sans', 'Helvetica Neue', 'Helvetica', sans-serif;
     font-weight: 300;
 }
@@ -37,10 +129,9 @@ article {
     padding-bottom: 5em;
 }
 
-header h1 {
-    font-size: 45px;
+.heading {
+    font-family: "Source Sans Pro", "sans-serif";
 }
-
 
 footer {
     padding-top: 1em;
@@ -53,101 +144,33 @@ footer {
     padding-bottom: 60px;
 }
 
-.heading {
-    font-family: "Source Sans Pro", "sans-serif";
-    color: white;
-    height: 150px;
-    text-shadow: 2px 2px black;
-    padding-top: 25px;
-    text-indent: 40px;
-    font-size: 60px;
-    font-weight: bold;
-}
-.headingContainer {
-    background-size: cover;
-    background-image: url('http://www.washington.edu/wp-content/themes/uw-2014/assets/headers/fall-leaves.jpg');
-}
-.subheading {
-    padding-left: 10px;
-    text-align: left;
-    font-size: 40px;
-}
-
 
 
 /*Navigation Bar*/
 
-
-#nav {
-    background-color: rgba(75, 191, 191, 0.95);
-    background-color: #BFBFBF;
+#navBar {
+    margin-bottom: 0px;
+}
+#navBar a {
+    color: #391C73;
 }
 
-#nav a{
-    font-weight: bold;
-
-}
-#nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    position: relative;
-
-}
-
-#nav ul li {
-    display: inline-block;
-}
-
-
-#nav ul li:hover {
-    background-color: white;
-    color: #F2F2F2;
-}
-
-#nav ul li a, a:visited {
-    color: #6700A3;
-    display: block;
-    padding: 15px;
-    text-decoration: none;
-}
-
-#nav ul li a:hover {
+#navBar a:hover {
     color: #b7a57a;
-    background-color: white;
-}
-
-#nav ul li:hover ul {
-    display: block;
-
-}
-
-#nav ul ul {
-    display: none;
-    position: absolute;
-    background-color: white;
-
-}
-
-#nav ul ul li{
-    display: block;
-    background-color: white;
-
 }
 
 /*creates a shadow around dropdown & a solid purple bar on top of dropdown*/
-#nav ul li ul{
-    box-shadow: 0px 1px 2px 0px #391C73;
+#navBar ul li ul{
     border-top: 2px;
     border-top-color: #391C73;
     border-top-style: solid; 
 }
 
-#nav ul ul li{
+#navBar ul ul li{
     background-color: white; 
     font-style: bold; 
     text-align: center;
-    width: 160px;
+    width: auto;
     font-size: 14px;
     padding-bottom: 5px;
     padding-top: 5px;
@@ -159,43 +182,18 @@ footer {
 }
 
 /*makes a solid gray bar every li item in drop down except last item*/
-#nav ul li ul li:not(:last-child){
+#navBar ul li ul li:not(:last-child){
     border-bottom-width: 2px;
     border-bottom-color: #E9E9E9;
     border-bottom-style: solid;
 }
 
 /*makes solid gold bar on right when li item is hovered in dropdown*/
-#nav ul li ul li a:hover {
+#navBar ul li ul li a:hover {
     margin-left: 3px;
     border-right-style: solid;
     border-right-color: #b7a57a;
     border-right-width: 3px;
 }
 
-/*formatting for the uw logo*/
-#purplestrip h1 {
-    position: relative;
-    top: -110px;
-    left: 170px;
-    font-size: 35px;
-}
-#purplestrip h2 {
-    position: relative;
-    font-size: 20px;
-    top: -120px;
-    left: 200px;
-    line-height: 1px;
-}
-#purplestrip h3 {
-    position: relative;
-    font-size: 16px;
-    top: -120px;
-    left: 225px;
-    line-height: 1px;
-}
 
-#w-Logo img {
-    position: relative;
-    top: 20px;
-    width: 200px;

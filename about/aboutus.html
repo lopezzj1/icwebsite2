@@ -21,38 +21,57 @@
 				<h2>Office of Minority Affairs &amp; Diversity</h2>
 				<h3>University of Washington</h3>
 			</header>
-
-			<nav role="navigation" id="nav">
-				<div id="nav_wrapper">
-					<ul>
-						<li><a href="../home.html">HOME</a>
-						</li>
-
-						<li><a href="aboutus.html">ABOUT</a> 
-							<ul>
-								<li><a href="aboutus.html">What is the IC?</a></li>
-								<li><a href="studentemployment.html">Student Employment</a></li>
-							</ul>
-						</li>
-						<li><a href="../Contact/contact.html">CONTACT / HOURS</a>
-							<ul>
-								<li><a href="../Contact/contact.html">Contact info</a></li>
-								<li><a href="../Contact/building-hours.html">Building Hours</a></li>
-								<li><a href="../Contact/program-hours.html">Program Hours</a></li>
-							</ul>
-						</li>
-						<li><a href="../staff/staff.html">STAFF</a>
-							<ul>
-								<li><a href="../staff/staff.html">Directory</a></li>
-							</ul>
-						</li>
-						<li><a href="../resources/resources.html">RESOURCES</a>
-							<ul>
-
-							</ul>
-						</li>
-					</ul>
-				</div>
+			<nav class="navbar navbar-default" role="navigation" id="navBar">
+			   <div class="navbar-header">
+			      <button type="button" class="navbar-toggle" data-toggle="collapse" 
+			         data-target="#navbar-collapse">
+			         <span class="sr-only">Navigation</span>
+			         <span class="icon-bar"></span>
+			         <span class="icon-bar"></span>
+			         <span class="icon-bar"></span>
+			      </button>
+			      <a class="navbar-brand" href="../home.html">HOME</a>
+			   </div>
+			   <div class="collapse navbar-collapse" id="navbar-collapse">
+			      <ul class="nav navbar-nav">
+			         <!--<li class="active"><a href="#">iOS</a></li>-->
+			         <li class="dropdown">
+			            <a href="aboutus.html" class="dropdown-toggle" data-toggle="dropdown">
+			               ABOUT <b class="caret"></b>
+			            </a>
+			            <ul class="dropdown-menu">
+			               <li><a href="aboutus.html">What is the IC?</a></li>
+			               <li><a href="studentemployment.html">Employment</a></li>
+			            </ul>
+			         </li>
+			         <li class="dropdown">
+			            <a href="../staff/staff.html" class="dropdown-toggle" data-toggle="dropdown">
+			                STAFF<b class="caret"></b>
+			            </a>
+			            <ul class="dropdown-menu">
+			               <li><a href="../staff/staff.html">Directory</a></li>
+			            </ul>
+			         </li>
+			         <li class="dropdown">
+			            <a href="../Contact/contact.html" class="dropdown-toggle" data-toggle="dropdown">
+			                CONTACT / HOURS<b class="caret"></b>
+			            </a>
+			            <ul class="dropdown-menu">
+			               <li><a href="../Contact/contact.html">Contact Information</a></li>
+			               <li><a href="../Contact/building-hours.html">Building Hours</a></li>
+			               <li><a href="../Contact/program-hours.html">Program Hours</a></li>
+			            </ul>
+			         </li>
+			         <li class="dropdown">
+			            <a href="../resources/resources.html" class="dropdown-toggle" data-toggle="dropdown">
+			                RESOURCES<b class="caret"></b>
+			            </a>
+			            <ul class="dropdown-menu">
+			               <li><a href="../resources/resources.html">Student Resources</a></li>
+			            </ul>
+			         </li>
+			      </ul>
+			   </div>
 			</nav>
 
 			<div class='headingContainer'><div class="heading">About Us</div></div>
@@ -90,5 +109,6 @@
 
 		</article>
 	</body>
-
+	<script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 </html>

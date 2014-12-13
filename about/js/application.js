@@ -6,21 +6,19 @@
 "use strict"
 
 function onReady() {
-	var element = document.getElementById("state");
-	var name = document.createElement("name");
 
-	var submitApp = document.getElementById('submit');
-	submitApp.addEventListener('click', confirmSubmit);
 
-	var personForm = document.getElementById('signup');
+	var personForm = document.getElementById('apply');
 	personForm.addEventListener('submit', onSubmit);
+
+	/*var submitApp = document.getElementById('submit');
+	submitApp.addEventListener('click', confirmSubmit);*/
 }
 
 
 function onSubmit(evt){
+	console.log("on submit");
 	var valid = validateForm(this);
-
-
 
 	if (!valid && evt.preventDefault){
 		evt.preventDefault();
@@ -32,6 +30,7 @@ function onSubmit(evt){
 }
 
 function validateForm(form) {
+	console.log("validate form");
 	var requiredFields = ['firstName', 'lastName', 'email', 'schoolYear', 'skillsAns']
 	var index;
 	var valid = true;
@@ -47,12 +46,14 @@ function validateForm(form) {
 
 
 function validateRequiredFields(field, form) {
-
+	console.log("validate required fields");
 	if (0 == form[field].value.trim().length){
 		form[field].style.borderColor = "red";
+		console.log(form[field]);
+		//form[field].className = 'form-control invalid-field';
 		return false;
 	} else {
-		form[field].className = 'form-control';
+		form[field].style.borderColor = "gray";
 		return true;
 	}
 }

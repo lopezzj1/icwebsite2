@@ -1,75 +1,86 @@
 @import url(http://fonts.googleapis.com/css?family=Graduate);
 
-.welcome {
-    padding-top: 20px;
-    text-align: center;
-    font-size: 45px;
-    font-weight: bold;
-    height: 125px;
+
+@media (min-width: 992px){
+    .welcome {
+        padding-top: 2px;
+        text-align: center;
+        font-size: 45px;
+        font-weight: bold;
+    }
+
+    #slideshow DIV IMG {
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto; 
+        width: 100%;
+        height: 100%;
+        background-position: center center;
+        background-size: cover;
+        padding: 1em;
+    }
+
+    #slideshow h2 {
+        padding: 1em;
+        position: absolute;
+        font-size: 40px;
+        color: white;
+        text-shadow: 2px 2px black;
+        font-family: 'Graduate', 'Open Sans', 'Helvetica Neue', 'Helvetica', sans-serif;
+    }
+    .topleft{
+        top: 0;
+    }
+    .bottomright {
+        bottom: 0;
+        right: 0;
+    }
+
+    #slideshow {
+        position:relative;
+        height:400px;
+        margin-top: 3em;
+        z-index:0;
+    }
+
+    #slideshow DIV {
+        position:absolute;
+        top:0;
+        left:0;
+        z-index:8;
+        opacity:0.0;
+        height: 400px;
+
+    }
+
+    #ƒlideshow DIV.active {
+        z-index:10;
+        opacity:1.0;
+    }
+
+    #slideshow DIV.last-active {
+        z-index:9;
+    }
+
+    #icInfo li {
+        list-style-type: none;
+    }
+}
+
+@media (max-width: 991px){
+    .welcome {
+        padding-top: 2px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+    }  
+
+    #slideshowContainer {
+        display: none;
+    }
 }
 
 .welcome {
     font-family: 'Graduate', 'Open Sans', 'Helvetica Neue', 'Helvetica', sans-serif;
 }
 
-#slideshow DIV IMG {
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto; 
-    width: 100%;
-    height: 100%;
-    background-position: center center;
-    background-size: cover;
-    padding: 1em;
-
-}
-
-#slideshow h2 {
-    padding: 1em;
-    position: absolute;
-    font-size: 40px;
-    color: white;
-    text-shadow: 2px 2px black;
-    font-family: 'Graduate', 'Open Sans', 'Helvetica Neue', 'Helvetica', sans-serif;
-}
-.topleft{
-    top: 0;
-}
-.bottomright {
-    bottom: 0;
-    right: 0;
-}
-
-#slideshowContainer {
-    position: ;
-    z-index: 1;
-}
-#slideshow {
-    position:relative;
-    height:400px;
-    margin-top: 3em;
-    z-index:0;
-}
-
-#slideshow DIV {
-    position:absolute;
-    top:0;
-    left:0;
-    z-index:8;
-    opacity:0.0;
-    height: 400px;
-
-}
-
-#ƒlideshow DIV.active {
-    z-index:10;
-    opacity:1.0;
-}
-
-#slideshow DIV.last-active {
-    z-index:9;
-}
-
-#icInfo li {
-    list-style-type: none;
-}

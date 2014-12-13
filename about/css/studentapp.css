@@ -1,6 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
 
-body {
-    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
+.invalid-field {
+    border: 1px solid #FF0000;
 }
-
