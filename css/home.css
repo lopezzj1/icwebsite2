@@ -1,7 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Graduate);
 
 .welcome {
-    padding-top: 20px;
+    padding: 20px;
     text-align: center;
     font-size: 45px;
     font-weight: bold;
@@ -20,7 +20,7 @@
     height: 100%;
     background-position: center center;
     background-size: cover;
-    padding: 1em;
+
 
 }
 
@@ -61,7 +61,7 @@
 
 }
 
-#ƒlideshow DIV.active {
+#slideshow DIV.active {
     z-index:10;
     opacity:1.0;
 }
