@@ -12,7 +12,7 @@ body {
 header {
     background-color: #4B2E83;
     color: white;
-    height: 170px;
+    height: 130px;
     padding-top: 22px;
     padding-bottom: 5em;
     padding-left: 1em;
@@ -85,6 +85,9 @@ footer {
 
 #nav a{
     font-weight: bold;
+    border-right: solid;
+    border-width: 1px;
+    border-color: lightgrey;
 
 }
 #nav ul {
@@ -176,26 +179,26 @@ footer {
 /*formatting for the uw logo*/
 #purplestrip h1 {
     position: relative;
-    top: -110px;
-    left: 170px;
+    top: -150px;
+    left: 190px;
     font-size: 35px;
 }
 #purplestrip h2 {
     position: relative;
     font-size: 20px;
-    top: -120px;
+    top: -160px;
     left: 200px;
     line-height: 1px;
 }
 #purplestrip h3 {
     position: relative;
     font-size: 16px;
-    top: -120px;
-    left: 225px;
+    top: -160px;
+    left: 200px;
     line-height: 1px;
 }
 
 #w-Logo img {
     position: relative;
-    top: 20px;
+    top: -20px;
     width: 200px;
