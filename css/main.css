@@ -10,6 +10,20 @@
         background-repeat: no-repeat;
         background-attachment: fixed;
     }
+
+    header {
+        background-color: #4B2E83;
+        color: white;
+        max-height: 130px;
+        height: 130px;
+        padding-top: 22px;
+        padding-bottom: 5em;
+        padding-left: 1em;
+        border-bottom: 5px;
+        border-bottom-color: #391C73;
+        border-bottom-style: solid;
+        box-shadow: 0px 2px 5px 0px #391C73;
+    }
     /*formatting for the uw logo*/
     #purplestrip h1 {
         position: relative;
@@ -66,9 +80,20 @@
 
 @media (max-width: 991px) {
 
+
     header {
+        background-color: #4B2E83;
+        color: white;
         height: 50px;
+        padding-top: 22px;
+        padding-bottom: 5em;
+        padding-left: 1em;
+        border-bottom: 5px;
+        border-bottom-color: #391C73;
+        border-bottom-style: solid;
+        box-shadow: 0px 2px 5px 0px #391C73;
     }
+    
 
     .heading {
         display: none;
@@ -101,18 +126,6 @@
 }
 
 
-header {
-    background-color: #4B2E83;
-    color: white;
-    max-height: 130px;
-    padding-top: 22px;
-    padding-bottom: 5em;
-    padding-left: 1em;
-    border-bottom: 5px;
-    border-bottom-color: #391C73;
-    border-bottom-style: solid;
-    box-shadow: 0px 2px 5px 0px #391C73;
-}
 
 
 article {
@@ -151,6 +164,7 @@ footer {
 #navBar {
     margin-bottom: 0px;
 }
+
 #navBar a {
     color: #391C73;
 }
